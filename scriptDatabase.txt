@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXIST `MailBox` (
+	`id`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	`passcode`	TEXT,
+	`greeting`	TEXT
+);
+CREATE TABLE `Message` (
+	`id`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	`idMailBox`	INTEGER,
+	`message`	TEXT,
+	`state`	INTEGER,
+	FOREIGN KEY(`idMailBox`) REFERENCES `MailBox`(`id`)
+);

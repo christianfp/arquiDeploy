@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VoiceMail:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/VoiceMail_jar</output-path>
+    <root id="archive" name="VoiceMail.jar">
+      <element id="module-output" name="VoiceMail" />
+      <element id="library" level="module" name="mockito-all-1.9.0-rc1.jar" module-name="VoiceMail" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mockito-all-1.10.19.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/sqlite-jdbc-3.7.22.jar" />
+      <element id="library" level="project" name="spark-core-2.7.2" />
+    </root>
+  </artifact>
+</component>
